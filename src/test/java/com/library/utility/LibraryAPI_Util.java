@@ -7,6 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static org.bouncycastle.cms.RecipientId.password;
 
 public class LibraryAPI_Util {
 
@@ -19,12 +20,13 @@ public class LibraryAPI_Util {
     public static String getToken(String userType){
 
 
-        String email=ConfigurationReader.getProperty(userType+"_username");
-        String password="libraryUser";
+//        String email=ConfigurationReader.getProperty(userType+"_username");
+//        String password="libraryUser";
+        String librarianUsername = System.getenv(userType+"_username");
+        String librarianPassword = System.getenv(userType+"_password");
 
 
-
-        return getToken(email,password);
+        return getToken(librarianUsername,librarianPassword);
 
 
     }
@@ -53,9 +55,9 @@ public class LibraryAPI_Util {
         String randomBookName = faker.book().title() + faker.number().numberBetween(0, 10);
         bookMap.put("name", randomBookName);
         bookMap.put("isbn", faker.code().isbn10()   );
-        bookMap.put("year", faker.number().numberBetween(1000,2021)   );
+        bookMap.put("year", String.valueOf(faker.number().numberBetween(1000,2021)   ));
         bookMap.put("author",faker.book().author()   );
-        bookMap.put("book_category_id", faker.number().numberBetween(1,20)   );  // in library app valid category_id is 1-20
+        bookMap.put("book_category_id", String.valueOf(faker.number().numberBetween(1,20)  ) );  // in library app valid category_id is 1-20
         bookMap.put("description", faker.chuckNorris().fact() );
 
         return bookMap ;
@@ -72,7 +74,7 @@ public class LibraryAPI_Util {
         userMap.put("email", email);
         userMap.put("password", "libraryUser");
         // 2 is librarian as role
-        userMap.put("user_group_id",2);
+        userMap.put("user_group_id",String.valueOf(2));
         userMap.put("status", "ACTIVE");
         userMap.put("start_date", "2023-03-11");
         userMap.put("end_date", "2024-03-11");

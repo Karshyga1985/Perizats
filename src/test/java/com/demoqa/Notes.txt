@@ -1,0 +1,14 @@
+   "userID": "a191a0a0-942b-4be4-b855-533f416a50e3",
+      "username": "Postman",
+
+      API-UI Integration Scenario
+      API Side
+      Create a user with POST request to : https://demoqa.com/Account/v1/User
+      Generate token with POST request to : https://demoqa.com/Account/v1/GenerateToken
+      Add a book to our profile with POST request to : https://demoqa.com/BookStore/v1/Books
+
+      UI Side
+      Login and check profile to verify the book is added and user is created
+
+      API Side
+      Delete User with DELETE request to : https://demoqa.com/Account/v1/User/:UUID

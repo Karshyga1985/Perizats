@@ -1,0 +1,15 @@
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/steps/UiStepDef.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/DB_Util.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/ConfigurationReader.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/steps/APIStepDefs.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/steps/Hooks.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/pages/BookPage.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/runner/FailedTestRunner.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/Driver.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/pages/LoginPage.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/runner/CukesRunner.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/steps/DemoQAapiStepDefs.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/pages/BasePage.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/LibraryAPI_Util.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/PasswordVerifier.java
+/Users/perizat/IdeaProjects/LibraryAllInOne/src/test/java/com/library/utility/BrowserUtil.java

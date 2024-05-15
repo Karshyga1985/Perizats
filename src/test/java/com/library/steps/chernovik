@@ -1,0 +1,19 @@
+        String id = (String) dbMap.get("id");
+        int dbId = Integer.parseInt(id);
+        String dbBookName = (String) dbMap.get("name");
+        String dbIsbn = (String) dbMap.get("isbn");
+        String year = (String) dbMap.get("year");
+        int dbYear = Integer.parseInt(year);
+        String dbAuthor = (String) dbMap.get("author");
+        String categoryId = (String) dbMap.get("book_category_id");
+        int dbCategoryId = Integer.parseInt(categoryId);
+        String dbDescription = (String) dbMap.get("description");
+
+        Assert.assertEquals(bookId, dbId);
+        Assert.assertEquals(jsonPath.getString("name"), dbBookName);
+        Assert.assertEquals(jsonPath.getString("isbn"), dbIsbn);
+        Assert.assertEquals(jsonPath.getInt("year"), dbYear);
+        Assert.assertEquals(jsonPath.getString("author"), dbAuthor);
+        Assert.assertEquals(jsonPath.getInt("book_category_id"), dbCategoryId);
+        Assert.assertEquals(jsonPath.getString("description"), dbDescription);
+        System.out.println("jsonPath.getString(\"name\") = " + jsonPath.getString("name"));

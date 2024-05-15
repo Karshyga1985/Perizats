@@ -22,7 +22,7 @@ public abstract  class BasePage {
     public WebElement pageHeader;
 
     @FindBy(css = "#navbarDropdown>span")
-    public WebElement accountHolderName;
+    public WebElement accountHolderName; // #navbarDropdown>span
 
     @FindBy(linkText = "Log Out")
     public WebElement logOutLink;

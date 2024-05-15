@@ -52,6 +52,8 @@ public class BookPage extends BasePage {
         String xpath = "//td[3][.='" + book + "']/../td/a";
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
+    //tbody//td[1]//a[@onclick='Books.edit_book(24616)']
+
 
     public WebElement borrowBook(String book) {
         String xpath = "//td[3][.='" + book + "']/../td/a";
