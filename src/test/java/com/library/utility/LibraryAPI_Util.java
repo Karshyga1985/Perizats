@@ -20,13 +20,14 @@ public class LibraryAPI_Util {
     public static String getToken(String userType){
 
 
-//        String email=ConfigurationReader.getProperty(userType+"_username");
-//        String password="libraryUser";
-        String librarianUsername = System.getenv(userType+"_username");
-        String librarianPassword = System.getenv(userType+"_password");
+        String email=ConfigurationReader.getProperty(userType+"_username");
+        String password="libraryUser";
+//        String librarianUsername = System.getenv(userType+"_username");
+//        String librarianPassword = System.getenv(userType+"_password");
 
 
-        return getToken(librarianUsername,librarianPassword);
+        //return getToken(librarianUsername,librarianPassword);
+        return getToken(email,password);
 
 
     }

@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="LibraryAppAllInOne" options="--illegal-access=warn" />
+      <module name="LibraryAppAllInOne" options="" />
     </option>
   </component>
 </project>

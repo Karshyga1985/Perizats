@@ -1,2 +1,0 @@
-file:src/test/resources/features/rest/us01.feature:4
-file:src/test/resources/features/rest/us02.feature:5

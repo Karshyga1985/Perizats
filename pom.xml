@@ -90,11 +90,11 @@
             <version>2.13.3</version>
         </dependency>
 
-             <dependency>
-    <groupId>org.apache.groovy</groupId>
-    <artifactId>groovy</artifactId>
-    <version>4.0.2</version> <!-- Ensure this is the latest version -->
-</dependency>
+<!--             <dependency>-->
+<!--    <groupId>org.apache.groovy</groupId>-->
+<!--    <artifactId>groovy</artifactId>-->
+<!--    <version>4.0.2</version> &lt;!&ndash; Ensure this is the latest version &ndash;&gt;-->
+<!--</dependency>-->
     </dependencies>
 
 

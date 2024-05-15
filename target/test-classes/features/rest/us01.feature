@@ -1,6 +1,7 @@
+@smoke
 Feature: As a librarian, I want to retrieve all users
 
-@us01 @smoke
+@us01
   Scenario: Retrieve all users from the API endpoint
 
     Given I logged Library api as a "librarian"
